@@ -1,0 +1,133 @@
+.footer {
+  margin: 130px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: var(--dark-gray, #656566);
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .about {
+    display: flex;
+    gap: 100px;
+    .company__links {
+      display: flex;
+      gap: 100px;
+    }
+    ul {
+      li {
+        color: var(--light-text, #e4e5ea);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        list-style-type: none;
+        margin: 5px 0;
+        cursor: pointer;
+      }
+    }
+    .menu {
+      ul {
+        margin-top: 28px;
+      }
+    }
+  }
+  .contacts {
+    .contact {
+      text-align: end;
+      ul {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        li {
+          list-style-type: none;
+          color: var(--light-text, #e4e5ea);
+          font-family: Inter;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          list-style-type: none;
+          margin: 5px 0;
+          div {
+            img {
+              margin: 0px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.footer__text {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin: 40px 0px 0px 0px;
+  div {
+    text-align: end;
+    p {
+      color: var(--light-text, #e4e5ea);
+      text-align: right;
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    p:nth-child(2) {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .footer {
+    padding: 10px;
+    display: block;
+    background: var(--black, #0e1014);
+    p {
+      font-size: 12px;
+    }
+    .about {
+      display: block;
+      ul {
+        li {
+          font-size: 14px;
+          margin: 10px 0;
+        }
+      }
+    }
+    .contacts {
+      margin-top: 20px;
+      .contact {
+        text-align: start;
+        ul {
+          display: block;
+          li {
+            margin:12px 0;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .footer__text{
+    padding: 10px;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    div{
+      p{
+        text-align: start;
+      }
+    }
+  }
+}
